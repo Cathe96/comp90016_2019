@@ -1,0 +1,17 @@
+CHROM	POS	TYPE	REF	ALT	EVIDENCE	FTYPE	STRAND	NT_POS	AA_POS	EFFECT	LOCUS_TAG	GENE	PRODUCT
+Wildtype	24388	snp	A	G	G:22 A:0								
+Wildtype	29479	snp	T	G	G:21 T:0								
+Wildtype	47299	snp	T	A	A:25 T:0								
+Wildtype	102969	snp	G	C	C:18 G:0								
+Wildtype	103048	snp	T	A	A:23 T:0								
+Wildtype	103379	del	GA	G	G:9 GA:0								
+Wildtype	106602	snp	T	G	G:22 T:0								
+Wildtype	106722	ins	G	GT	GT:11 G:0								
+Wildtype	109833	snp	T	A	A:17 T:0								
+Wildtype	114540	del	AT	A	A:26 AT:0								
+Wildtype	129881	mnp	GT	AA	AA:19 GT:0								
+Wildtype	138877	snp	G	C	C:14 G:0								
+Wildtype	138954	snp	A	G	G:10 A:0								
+Wildtype	160547	del	GT	G	G:19 GT:0								
+Wildtype	160552	del	CT	C	C:14 CT:0								
+Wildtype	190866	del	GT	G	G:17 GT:0								

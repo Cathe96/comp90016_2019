@@ -1,0 +1,10 @@
+DateTime	2019-03-28T04:26:18
+ReadFiles	/home/ubuntu/data/day-4/variant-calling-practical/mutant_R1.fastq /home/ubuntu/data/day-4/variant-calling-practical/mutant_R2.fastq
+Reference	/home/ubuntu/data/day-4/variant-calling-practical/wildtype.fna
+ReferenceSize	197394
+Software	snippy 4.3.2
+Variant-DEL	5
+Variant-INS	1
+Variant-MNP	1
+Variant-SNP	9
+VariantTotal	16

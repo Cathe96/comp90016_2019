@@ -1,0 +1,43 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##fileDate=20190328
+##source=freeBayes v1.2.0-dirty
+##reference=reference/ref.fa
+##contig=<ID=Wildtype,length=197394>
+##phasing=none
+##commandline="freebayes -p 2 -P 0 -C 10 --min-repeat-entropy 1.5 --strict-vcf -q 13 -m 60 --min-coverage 10 -F 0.05 -f reference/ref.fa snps.bam --region Wildtype:0-13379"
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total read depth at the locus">
+##INFO=<ID=RO,Number=1,Type=Integer,Description="Count of full observations of the reference haplotype.">
+##INFO=<ID=AO,Number=A,Type=Integer,Description="Count of full observations of this alternate haplotype.">
+##INFO=<ID=QR,Number=1,Type=Integer,Description="Reference allele quality sum in phred">
+##INFO=<ID=QA,Number=A,Type=Integer,Description="Alternate allele quality sum in phred">
+##INFO=<ID=AB,Number=A,Type=Float,Description="Allele balance at heterozygous sites: a number between 0 and 1 representing the ratio of reads showing the reference allele to all reads, considering only reads from individuals called as heterozygous">
+##INFO=<ID=TYPE,Number=A,Type=String,Description="The type of allele, either snp, mnp, ins, del, or complex.">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GL,Number=G,Type=Float,Description="Genotype Likelihood, log10-scaled likelihoods of the data given the called genotype for each possible genotype generated from the reference and alternate alleles given the sample ploidy">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+##FORMAT=<ID=RO,Number=1,Type=Integer,Description="Reference allele observation count">
+##FORMAT=<ID=QR,Number=1,Type=Integer,Description="Sum of quality of the reference observations">
+##FORMAT=<ID=AO,Number=A,Type=Integer,Description="Alternate allele observation count">
+##FORMAT=<ID=QA,Number=A,Type=Integer,Description="Sum of quality of the alternate observations">
+##bcftools_viewVersion=1.9+htslib-1.9
+##bcftools_viewCommand=view --include 'FMT/GT="1/1" && QUAL>=100 && FMT/DP>=10 && (FMT/AO)/(FMT/DP)>=0' snps.raw.vcf; Date=Thu Mar 28 04:26:24 2019
+##bcftools_annotateVersion=1.9+htslib-1.9
+##bcftools_annotateCommand=annotate --remove ^INFO/TYPE,^INFO/DP,^INFO/RO,^INFO/AO,^INFO/AB,^FORMAT/GT,^FORMAT/DP,^FORMAT/RO,^FORMAT/AO,^FORMAT/QR,^FORMAT/QA,^FORMAT/GL; Date=Thu Mar 28 04:26:24 2019
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	varcall
+Wildtype	24388	.	A	G	673.635	.	AB=0;AO=22;DP=22;QA=785;QR=0;RO=0;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	1/1:22:0:0:22:785:-70.9652,-6.62266,0
+Wildtype	29479	.	T	G	673.562	.	AB=0;AO=21;DP=21;QA=776;QR=0;RO=0;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	1/1:21:0:0:21:776:-70.1607,-6.32163,0
+Wildtype	47299	.	T	A	772.746	.	AB=0;AO=25;DP=25;QA=921;QR=0;RO=0;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	1/1:25:0:0:25:921:-83.2013,-7.52575,0
+Wildtype	102969	.	G	C	548.461	.	AB=0;AO=18;DP=18;QA=637;QR=0;RO=0;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	1/1:18:0:0:18:637:-57.6434,-5.41854,0
+Wildtype	103048	.	T	A	659.012	.	AB=0;AO=23;DP=23;QA=766;QR=0;RO=0;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	1/1:23:0:0:23:766:-69.2328,-6.92369,0
+Wildtype	103379	.	GA	G	262.515	.	AB=0;AO=9;DP=10;QA=310;QR=0;RO=0;TYPE=del	GT:DP:RO:QR:AO:QA:GL	1/1:10:0:0:9:310:-28.0782,-3.31133,0
+Wildtype	106602	.	T	G	679.76	.	AB=0;AO=22;DP=22;QA=790;QR=0;RO=0;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	1/1:22:0:0:22:790:-71.4106,-6.62266,0
+Wildtype	106722	.	G	GT	318.317	.	AB=0;AO=11;DP=12;QA=386;QR=0;RO=0;TYPE=ins	GT:DP:RO:QR:AO:QA:GL	1/1:12:0:0:11:386:-34.696,-3.31133,0
+Wildtype	109833	.	T	A	523.219	.	AB=0;AO=17;DP=17;QA=612;QR=0;RO=0;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	1/1:17:0:0:17:612:-55.4045,-5.11751,0
+Wildtype	114540	.	AT	A	743.241	.	AB=0;AO=26;DP=27;QA=862;QR=0;RO=0;TYPE=del	GT:DP:RO:QR:AO:QA:GL	1/1:27:0:0:26:862:-77.6409,-9.0309,0
+Wildtype	129881	.	GT	AA	591.829	.	AB=0;AO=19;DP=19;QA=686;QR=0;RO=0;TYPE=mnp	GT:DP:RO:QR:AO:QA:GL	1/1:19:0:0:19:686:-62.0641,-5.71957,0
+Wildtype	138877	.	G	C	433.927	.	AB=0;AO=14;DP=14;QA=507;QR=0;RO=0;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	1/1:14:0:0:14:507:-45.9644,-4.21442,0
+Wildtype	138954	.	A	G	302.917	.	AB=0;AO=10;DP=10;QA=354;QR=0;RO=0;TYPE=snp	GT:DP:RO:QR:AO:QA:GL	1/1:10:0:0:10:354:-32.1976,-3.0103,0
+Wildtype	160547	.	GT	G	553.041	.	AB=0;AO=19;DP=19;QA=643;QR=0;RO=0;TYPE=del	GT:DP:RO:QR:AO:QA:GL	1/1:19:0:0:19:643:-58.1797,-5.71957,0
+Wildtype	160552	.	CT	C	470.614	.	AB=0;AO=14;DP=17;QA=452;QR=0;RO=0;TYPE=del	GT:DP:RO:QR:AO:QA:GL	1/1:17:0:0:14:452:-49.6242,-5.11751,0
+Wildtype	190866	.	GT	G	508.52	.	AB=0;AO=17;DP=17;QA=587;QR=0;RO=0;TYPE=del	GT:DP:RO:QR:AO:QA:GL	1/1:17:0:0:17:587:-53.1441,-6.32163,0
